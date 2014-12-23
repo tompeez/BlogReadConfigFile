@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <view id="index">
+    <page>/index.jsf</page>
+  </view>
+  <managed-bean id="__1">
+    <managed-bean-name>backing_index</managed-bean-name>
+    <managed-bean-class>de.hahn.blog.readconfigfile.view.backing.Index</managed-bean-class>
+    <managed-bean-scope>backingBean</managed-bean-scope>
+    <!--oracle-jdev-comment:managed-bean-jsp-link:1index.jsf-->
+  </managed-bean>
+</adfc-config>
