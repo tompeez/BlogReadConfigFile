@@ -6,10 +6,12 @@ import oracle.adf.view.rich.component.rich.data.RichTable;
 import oracle.adf.view.rich.component.rich.layout.RichGridCell;
 import oracle.adf.view.rich.component.rich.layout.RichGridRow;
 import oracle.adf.view.rich.component.rich.layout.RichPanelGridLayout;
+import oracle.adf.view.rich.component.rich.layout.RichPanelGroupLayout;
 import oracle.adf.view.rich.component.rich.layout.RichPanelStretchLayout;
 import oracle.adf.view.rich.component.rich.output.RichMessages;
 import oracle.adf.view.rich.component.rich.output.RichOutputText;
 import oracle.adf.view.rich.component.rich.output.RichPanelCollection;
+import oracle.adf.view.rich.component.rich.output.RichSpacer;
 
 public class Index {
     private RichGridCell gc2;
@@ -24,6 +26,10 @@ public class Index {
     private RichPanelCollection pc1;
     private RichTable t1;
     private RichMessages m1;
+    private RichOutputText ot6;
+    private RichOutputText ot7;
+    private RichPanelGroupLayout pgl2;
+    private RichSpacer s1;
 
     public void setGc2(RichGridCell gc2) {
         this.gc2 = gc2;
@@ -119,5 +125,37 @@ public class Index {
 
     public RichMessages getM1() {
         return m1;
+    }
+
+    public void setOt6(RichOutputText ot6) {
+        this.ot6 = ot6;
+    }
+
+    public RichOutputText getOt6() {
+        return ot6;
+    }
+
+    public void setOt7(RichOutputText ot7) {
+        this.ot7 = ot7;
+    }
+
+    public RichOutputText getOt7() {
+        return ot7;
+    }
+
+    public void setPgl2(RichPanelGroupLayout pgl2) {
+        this.pgl2 = pgl2;
+    }
+
+    public RichPanelGroupLayout getPgl2() {
+        return pgl2;
+    }
+
+    public void setS1(RichSpacer s1) {
+        this.s1 = s1;
+    }
+
+    public RichSpacer getS1() {
+        return s1;
     }
 }

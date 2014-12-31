@@ -58,7 +58,15 @@
                             </f:facet>
                             <f:facet name="start"/>
                             <f:facet name="end"/>
-                            <f:facet name="top"/>
+                            <f:facet name="top">
+                                <af:panelGroupLayout id="pgl2" binding="#{backingBeanScope.backing_index.pgl2}" layout="horizontal">
+                                    <af:outputText value="Departments Table" id="ot7" binding="#{backingBeanScope.backing_index.ot7}"
+                                                   inlineStyle="font-size:large;"/>
+                                    <af:spacer width="20" height="10" id="s1" binding="#{backingBeanScope.backing_index.s1}"/>
+                                    <af:outputText value="(Feature-1 Test)" id="ot6" binding="#{backingBeanScope.backing_index.ot6}"
+                                                   inlineStyle="font-size:small;"/>
+                                </af:panelGroupLayout>
+                            </f:facet>
                         </af:panelStretchLayout>
                     </af:gridCell>
                 </af:gridRow>
