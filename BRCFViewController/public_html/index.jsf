@@ -1,24 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE html>
 <f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
-    <af:document title="index.jsf" id="d1" binding="#{backingBeanScope.backing_index.d1}">
-        <af:messages id="m1" binding="#{backingBeanScope.backing_index.m1}"/>
-        <af:form id="f1" binding="#{backingBeanScope.backing_index.f1}">
-            <af:panelGridLayout id="pgl1" binding="#{backingBeanScope.backing_index.pgl1}">
-                <af:gridRow height="50px" id="gr1" binding="#{backingBeanScope.backing_index.gr1}">
-                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc1" binding="#{backingBeanScope.backing_index.gc1}">
+    <af:document title="index.jsf" id="d1">
+        <af:messages id="m1"/>
+        <af:form id="f1">
+            <af:panelGridLayout id="pgl1">
+                <af:gridRow height="50px" id="gr1">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc1">
                         <!-- Header -->
-                        <af:outputText value="Read Configuration File Test" id="ot1" binding="#{backingBeanScope.backing_index.ot1}"
-                                       inlineStyle="font-size:x-large;"/>
+                        <af:outputText value="Read Configuration File Test" id="ot1" inlineStyle="font-size:x-large;"/>
                     </af:gridCell>
                 </af:gridRow>
-                <af:gridRow height="100%" id="gr2" binding="#{backingBeanScope.backing_index.gr2}">
-                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc2" binding="#{backingBeanScope.backing_index.gc2}">
+                <af:gridRow height="100%" id="gr2">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc2">
                         <!-- Content -->
-                        <af:panelStretchLayout id="psl1" binding="#{backingBeanScope.backing_index.psl1}" startWidth="0px" endWidth="0px" bottomHeight="0px">
+                        <af:panelStretchLayout id="psl1">
                             <f:facet name="bottom"/>
                             <f:facet name="center">
-                                <af:panelCollection id="pc1" binding="#{backingBeanScope.backing_index.pc1}">
+                                <af:panelCollection id="pc1">
                                     <f:facet name="menus"/>
                                     <f:facet name="toolbar"/>
                                     <af:table value="#{bindings.DepartmentsView1.collectionModel}" var="row" rows="#{bindings.DepartmentsView1.rangeSize}"
@@ -26,8 +25,7 @@
                                               rowBandingInterval="0" selectedRowKeys="#{bindings.DepartmentsView1.collectionModel.selectedRow}"
                                               selectionListener="#{bindings.DepartmentsView1.collectionModel.makeCurrent}" rowSelection="single"
                                               fetchSize="#{bindings.DepartmentsView1.rangeSize}" filterModel="#{bindings.DepartmentsView1Query.queryDescriptor}"
-                                              queryListener="#{bindings.DepartmentsView1Query.processQuery}" filterVisible="true" varStatus="vs" id="t1"
-                                              binding="#{backingBeanScope.backing_index.t1}">
+                                              queryListener="#{bindings.DepartmentsView1Query.processQuery}" filterVisible="true" varStatus="vs" id="t1">
                                         <af:column sortProperty="#{bindings.DepartmentsView1.hints.DepartmentId.name}" filterable="true" sortable="true"
                                                    headerText="#{bindings.DepartmentsView1.hints.DepartmentId.label}" id="c1">
                                             <af:outputText value="#{row.DepartmentId}" shortDesc="#{bindings.DepartmentsView1.hints.DepartmentId.tooltip}"
@@ -58,12 +56,17 @@
                             </f:facet>
                             <f:facet name="start"/>
                             <f:facet name="end"/>
-                            <f:facet name="top"/>
+                            <f:facet name="top">
+                                <af:panelGroupLayout id="pgl2">
+                                    <af:outputText value="Departments Table" id="ot7" inlineStyle="font-size:large;"/>
+                                    <af:spacer width="20" height="10" id="s1"/>
+                                    <af:outputText value="(Feature-1 Test)" id="ot6" inlineStyle="font-size:small;"/>
+                                </af:panelGroupLayout>
+                            </f:facet>
                         </af:panelStretchLayout>
                     </af:gridCell>
                 </af:gridRow>
             </af:panelGridLayout>
         </af:form>
     </af:document>
-    <!--oracle-jdev-comment:auto-binding-backing-bean-name:backing_index-->
 </f:view>
