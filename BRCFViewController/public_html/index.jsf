@@ -73,5 +73,4 @@
             </af:panelGridLayout>
         </af:form>
     </af:document>
-    <!--oracle-jdev-comment:auto-binding-backing-bean-name:backing_index-->
 </f:view>
