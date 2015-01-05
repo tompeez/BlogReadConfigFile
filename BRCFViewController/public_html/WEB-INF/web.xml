@@ -122,6 +122,14 @@
     <param-name>javax.faces.FACELETS_VIEW_MAPPINGS</param-name>
     <param-value>*.jsf;*.xhtml</param-value>
   </context-param>
+  <context-param>
+    <description>name of the file to read</description>
+    <param-name>de.hahn.blog.readconfigfile.FILENAME</param-name>
+    <param-value>/tmp/readconfigfile.properties</param-value>
+  </context-param>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
   <mime-mapping>
     <extension>swf</extension>
     <mime-type>application/x-shockwave-flash</mime-type>

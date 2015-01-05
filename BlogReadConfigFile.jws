@@ -46,8 +46,8 @@
                   </hash>
                </list>
             </hash>
-            <url n="earURL" path="deploy/BlogReadConfigFile_Project1_BlogReadConfigFile.ear"/>
-            <value n="enterpriseAppName" v="BlogReadConfigFile_Project1_BlogReadConfigFile"/>
+            <url n="earURL" path="deploy/BlogReadConfigFile.ear"/>
+            <value n="enterpriseAppName" v="BlogReadConfigFile"/>
             <hash n="fileGroups">
                <list n="groups">
                   <hash>
@@ -84,8 +84,13 @@
                   </hash>
                </list>
             </hash>
+            <value n="platformType" v="WEBLOGIC"/>
+            <value n="platformVersion" v="12.0.0.0"/>
             <value n="profileClass" v="oracle.jdeveloper.deploy.ear.EarProfile"/>
             <value n="profileName" v="BlogReadConfigFile_Project1_BlogReadConfigFile"/>
+            <hash n="properties">
+               <value n="" v=""/>
+            </hash>
          </hash>
       </hash>
       <list n="profileList">
