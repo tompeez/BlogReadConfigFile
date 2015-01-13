@@ -15,7 +15,12 @@
                     <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc2">
                         <!-- Content -->
                         <af:panelStretchLayout id="psl1">
-                            <f:facet name="bottom"/>
+                            <f:facet name="bottom">
+                                <af:panelGroupLayout id="pgl3">
+                                    <af:button text="Read Configuration again" id="b1" actionListener="#{ReadPropertyFileBean.rereadActionListener}"
+                                               partialSubmit="true"/>
+                                </af:panelGroupLayout>
+                            </f:facet>
                             <f:facet name="center">
                                 <af:panelCollection id="pc1">
                                     <f:facet name="menus"/>
@@ -60,7 +65,8 @@
                                 <af:panelGroupLayout id="pgl2">
                                     <af:outputText value="Departments Table" id="ot7" inlineStyle="font-size:large;"/>
                                     <af:spacer width="20" height="10" id="s1"/>
-                                    <af:outputText value="(Feature-1 Test)" id="ot6" inlineStyle="font-size:small;"/>
+                                    <af:outputText id="ot6" inlineStyle="font-size:small;" value="#{ReadPropertyFileBean.propertyVersionInfo}"
+                                                   partialTriggers="b1"/>
                                 </af:panelGroupLayout>
                             </f:facet>
                         </af:panelStretchLayout>

@@ -170,8 +170,32 @@
       </list>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
-      <value n="j2eeWebAppName" v="BlogReadConfigFile-BRCFViewController-webapp"/>
-      <value n="j2eeWebContextRoot" v="BlogReadConfigFile-BRCFViewController-context-root"/>
+      <value n="j2eeWebAppName" v="BlogReadConfigFile-webapp"/>
+      <value n="j2eeWebContextRoot" v="brcf"/>
+   </hash>
+   <hash n="oracle.jdeveloper.model.PathsConfiguration">
+      <hash n="javaContentSet">
+         <list n="constituent-sets">
+            <hash>
+               <list n="pattern-filters">
+                  <string v="+**"/>
+               </list>
+               <list n="url-path">
+                  <url path="src/"/>
+               </list>
+            </hash>
+            <hash>
+               <url n="content-folder-url" path="adfmsrc/de/hahn/blog/readconfigfile/view/"/>
+               <list n="pattern-filters">
+                  <string v="+de/hahn/blog/readconfigfile/view/ReadPropertyFileBean.java"/>
+               </list>
+               <list n="url-path">
+                  <url path="adfmsrc/"/>
+               </list>
+            </hash>
+         </list>
+         <list n="url-path"/>
+      </hash>
    </hash>
    <hash n="oracle.jdevimpl.config.JProjectLibraries">
       <list n="exportedReferences">
@@ -283,6 +307,10 @@
             <value n="id" v="BC4J Oracle Domains"/>
             <value n="isJDK" v="false"/>
          </hash>
+         <hash>
+            <url n="id" path="../../../../../jdev/jdev_system/12.1.3.0.0/system12.1.3.0.41.140521.1008/o.jdeveloper/commons-io-2.4.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
       </list>
       <list n="libraryReferences">
          <hash>
@@ -391,6 +419,10 @@
          </hash>
          <hash>
             <value n="id" v="BC4J Oracle Domains"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="../../../../../jdev/jdev_system/12.1.3.0.0/system12.1.3.0.41.140521.1008/o.jdeveloper/commons-io-2.4.library"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>
