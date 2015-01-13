@@ -3,4 +3,9 @@
   <view id="index">
     <page>/index.jsf</page>
   </view>
+  <managed-bean id="__1">
+    <managed-bean-name>ReadPropertyFileBean</managed-bean-name>
+    <managed-bean-class>de.hahn.blog.readconfigfile.view.ReadPropertyFileBean</managed-bean-class>
+    <managed-bean-scope>application</managed-bean-scope>
+  </managed-bean>
 </adfc-config>
