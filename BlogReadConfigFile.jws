@@ -46,6 +46,7 @@
                   </hash>
                </list>
             </hash>
+            <url n="deployPlanUrl" path="BRCFViewController/src/META-INF/BlogReadConfigFile_Plan.xml"/>
             <url n="earURL" path="deploy/BlogReadConfigFile.ear"/>
             <value n="enterpriseAppName" v="BlogReadConfigFile"/>
             <hash n="fileGroups">
@@ -96,5 +97,23 @@
       <list n="profileList">
          <string v="BlogReadConfigFile_Project1_BlogReadConfigFile"/>
       </list>
+   </hash>
+   <hash n="oracle.jdeveloper.model.PathsConfiguration">
+      <hash n="ApplicationSrcContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="src/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.mds.internal.dt.ide.CustOptions">
+      <list n="customizationLibraries">
+         <hash/>
+      </list>
+   </hash>
+   <hash n="Weblogic JDBC">
+      <value n="Weblogic-JDBC-Auto-Sync-Key" v="false"/>
    </hash>
 </jws:workspace>
