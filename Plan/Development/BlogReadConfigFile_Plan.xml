@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deployment-plan xmlns="http://xmlns.oracle.com/weblogic/deployment-plan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://xmlns.oracle.com/weblogic/deployment-plan http://xmlns.oracle.com/weblogic/deployment-plan/1.0/deployment-plan.xsd">
+    <application-name>BlogReadConfigFile</application-name>
+    <variable-definition>
+        <variable>
+            <name>ResourceFileLocation</name>
+            <value>/tmp/readconfigfile_new2.properties</value>
+        </variable>
+    </variable-definition>
+    <module-override>
+        <module-name>BlogReadConfigFile_BRCFViewController_webapp.war</module-name>
+        <module-type>war</module-type>
+        <module-descriptor external="false">
+            <root-element>web-app</root-element>
+            <uri>WEB-INF/web.xml</uri>
+            <variable-assignment>
+                <name>ResourceFileLocation</name>
+                <xpath>/web-app/context-param/[param-name="de.hahn.blog.readconfigfile.FILENAME"]/param-value</xpath>
+                <operation>replace</operation>
+            </variable-assignment>
+        </module-descriptor>
+    </module-override>
+</deployment-plan>
